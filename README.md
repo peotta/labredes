@@ -86,19 +86,15 @@ Os critérios específicos de cada experimento serão informados no respectivo r
 
 ## Bibliografia Básica
 
-- KUROSE, J. F.; ROSS, K. W.  
-  *Computer Networks: A Top-Down Approach*. Pearson.
+- **KUROSE, J. F.; ROSS, K. W.**   *Computer Networks: A Top-Down Approach*. Pearson.
 
-- STALLINGS, W.  
-  *Data and Computer Communications*. Prentice Hall.
+- **STALLINGS, W.** Data and Computer Communications. Prentice Hall.
 
-- XAVIER, F. C.  
-  *Roteadores Cisco*. Novatec.
+- **XAVIER, F. C.**  Roteadores Cisco. Novatec.
 
-- Cisco Networking Academy  
-  https://www.netacad.com
+- **Cisco Networking Academy** https://www.netacad.com
 
----
+  ---
 
 ## Observações Importantes
 
