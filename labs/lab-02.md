@@ -1,5 +1,5 @@
 Disciplina: **ENE0011 – Laboratório de Redes**  
-Curso: **Engenharia de Redes e Comunicação**  
+Curso: **Engenharia de Redes de Comunicação**  
 Instituição: **Universidade de Brasília (UnB)**  
 Departamento: **Engenharia Elétrica**
 
