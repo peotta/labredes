@@ -300,8 +300,6 @@ Todos os comandos executados devem ser registrados e explicados.
 2. COMER, D. E.  
    *Internetworking with TCP/IP – Volume I*. 5ª ed. Prentice Hall, 2005.
 
-3. Sites diversos sobre **VLANs** e **Roteamento Estático** na Internet.
-
 ---
 
 > Este laboratório possui finalidade exclusivamente acadêmica, devendo as configurações e técnicas apresentadas serem utilizadas apenas em ambientes autorizados e controlados.
