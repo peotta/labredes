@@ -44,14 +44,14 @@ Cada laboratório possui um diretório próprio contendo:
 ## Laboratórios
 
 | Laboratório | Tema | Link |
-|------------:|------|------|
-| Lab 01 | Introdução aos Dispositivos de Redes | [Acessar](./labs/lab-01.md) |
-| Lab 02 | Analisadores de Protocolos (Sniffers) | [Acessar](./labs/lab-02.md) |
-| Lab 03 | VLAN e Roteamento Estático | [Acessar](./labs/lab-03.md) |
-| Lab 04 | Roteamento Estático | [Acessar](./labs/lab-04.md) |
-| Lab 05 | Protocolo RIP | [Acessar](./labs/lab-05.md) |
-| Lab 06 | OSPF (Open Shortest Path First) | [Acessar](./labs/lab-06.md) |
-| Lab 07 | Roteamento OSPF (Áreas, DR/BDR e Enlaces Virtuais) | [Acessar](./labs/lab-07.md) |
+|:------------:|:------|------|
+| 01 | Introdução aos Dispositivos de Redes | [Acessar](./labs/lab-01.md) |
+| 02 | Analisadores de Protocolos (Sniffers) | [Acessar](./labs/lab-02.md) |
+| 03 | VLAN e Roteamento Estático | [Acessar](./labs/lab-03.md) |
+| 04 | Roteamento Estático | [Acessar](./labs/lab-04.md) |
+| 05 | Protocolo RIP | [Acessar](./labs/lab-05.md) |
+| 06 | OSPF (Open Shortest Path First) | [Acessar](./labs/lab-06.md) |
+| 07 | Roteamento OSPF (Áreas, DR/BDR e Enlaces Virtuais) | [Acessar](./labs/lab-07.md) |
 | Comandos | Lista de Comandos | [Acessar](./labs/comandos.md) |
 ---
 
