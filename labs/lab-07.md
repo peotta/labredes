@@ -54,7 +54,7 @@ Este laboratório aborda os seguintes conceitos, conforme os anexos originais:
 
 ##  Topologia do Laboratório
 
-A topologia utilizada é a do **Anexo I – Topologia**, composta por:
+A topologia utilizada é composta por:
 
 ### Áreas OSPF
 - **Área 0 (Backbone)**
