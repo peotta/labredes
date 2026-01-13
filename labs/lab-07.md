@@ -15,6 +15,8 @@ Este laboratório tem como objetivo o **planejamento, configuração e análise 
 
 O experimento é dividido em **duas partes complementares**.
 
+**Dica:** Lista de Comandos [Acessar](./comandos.md) 
+
 > **Observações:**  Este laboratório faz parte da disciplina Protocolos de Transporte e Roteamento e deve ser executado após os laboratórios de Roteamento Estático, RIP e OSPF primeira parte, pois pressupõe conhecimento prévio de tabelas de rotas e convergência.
 
 ---
