@@ -90,13 +90,21 @@ Os critérios específicos de cada experimento serão informados no respectivo r
 
 ## Bibliografia Básica
 
-- **KUROSE, J. F.; ROSS, K. W.**   *Computer Networks: A Top-Down Approach*. Pearson.
+- **DOYLE, Jeff; CARROLL, Jennifer DeHaven**. Routing TCP/IP: volume 1. Indianapolis: Cisco Press, 1998.
+- **FOROUZAN, Behrouz A.** Protocolo TCP/IP. 3. ed. Porto Alegre: AMGH, 2010.
 
-- **STALLINGS, W.** Data and Computer Communications. Prentice Hall.
+## Bibliografia Complementar
 
-- **XAVIER, F. C.**  Roteadores Cisco. Novatec.
+- **KUROSE, James F.; ROSS, Keith W**. Redes de computadores e a Internet: uma abordagem top-down. 6. ed. São Paulo: Pearson, 2013.
+- **TANENBAUM, Andrew S.; WETHERALL, David J.** Redes de computadores. 5. ed. São Paulo: Pearson, 2011.
+- **STALLINGS, William.** Comunicações de dados e redes de computadores. 10. ed. São Paulo: Pearson, 2014.
+- **COMER, Douglas E.** Interligação de redes com TCP/IP: princípios, protocolos e arquitetura. 5. ed. Rio de Janeiro: Elsevier, 2006.
 
-- **Cisco Networking Academy** https://www.netacad.com
+- ## Documentos Normativos e Técnicos
+- **POSTEL, Jon.** Transmission Control Protocol. RFC 793. Marina del Rey: ISI, 1981.
+- **POSTEL, Jon.** User Datagram Protocol. RFC 768. Marina del Rey: ISI, 1980.
+- **MOY, John T.** OSPF version 2. RFC 2328. Marina del Rey: ISI, 1998.
+- **REKHTER, Yakov et al.** A border gateway protocol 4 (BGP-4). RFC 4271. Marina del Rey: ISI, 2006.
 
   ---
 
