@@ -49,6 +49,7 @@ Cada laboratório possui um diretório próprio contendo:
 | Lab 02 | Analisadores de Protocolos (Sniffers) | [Acessar](./labs/lab-02.md) |
 | Lab 03 | VLAN e Roteamento Estático | [Acessar](./labs/lab-03.md) |
 | Lab 04 | Roteamento Estático | [Acessar](./labs/lab-04.md) |
+| Lab 05 | Protocolo RIP | [Acessar](./labs/lab-05.md) |
 
 
 ---
