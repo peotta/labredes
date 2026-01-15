@@ -6,7 +6,7 @@ Departamento: **Engenharia Elétrica**
 Professor Responsável: **Prof. Dr. Laerte Peotta de Melo**
 
 ---
-## Laboratório 09 – Ataques ao OSPF e Técnicas de Mitigação
+## Experimento 10 – Ataques ao OSPF e Técnicas de Mitigação
 
 
 ## Descrição Geral
