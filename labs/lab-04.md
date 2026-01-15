@@ -105,4 +105,8 @@ O relatório do laboratório deve documentar **todos os comandos executados**, i
 3. Quais rotas ficam definidas automaticamente nas estações?
 4. Caso cada rede utilizasse uma tecnologia de enlace diferente, haveria impacto no funcionamento do roteamento? Justifique.
 5. O que é retornado pelo comando `ping` entre estações de redes distintas? Explique seu funcionamento.
-6. O que é retornado pelo comando `traceroute` entre estações de redes distintas? Expl
+6. O que é retornado pelo comando `traceroute` entre estações de redes distintas? Explique
+
+> Laboratório desenvolvido para a disciplina **ENE0011 – Laboratório de Redes**  
+> **Prof. Dr. Laerte Peotta de Melo**
+
