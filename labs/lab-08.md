@@ -1,4 +1,13 @@
-# Laboratório 04 – VLAN Avançado, Trunking, Segurança e Diagnóstico de Redes
+Disciplina: **ENE0011 – Laboratório de Redes**  
+Curso: **Engenharia de Redes de Comunicação**  
+Instituição: **Universidade de Brasília (UnB)**  
+Departamento: **Engenharia Elétrica**
+
+Professor Responsável: **Prof. Dr. Laerte Peotta de Melo**
+
+---
+
+## Experimento 08 – VLAN Avançado, Trunking, Segurança e Diagnóstico de Redes
 
 Disciplina: **ENE0011 – Laboratório de Redes**  
 Curso: **Engenharia de Redes e Comunicação**  
