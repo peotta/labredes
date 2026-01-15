@@ -52,6 +52,8 @@ Cada laboratório possui um diretório próprio contendo:
 | 05 | Protocolo RIP | [Acessar](./labs/lab-05.md) |
 | 06 | OSPF (Open Shortest Path First) | [Acessar](./labs/lab-06.md) |
 | 07 | Roteamento OSPF (Áreas, DR/BDR e Enlaces Virtuais) | [Acessar](./labs/lab-07.md) |
+| 08 | VLAN Avançado, Trunking, Segurança e Diagnóstico de Redes | [Acessar](./labs/lab-08.md) |
+| 09 | OSPF Avançado: Falhas, Convergência, Custos e Engenharia de Tráfego | [Acessar](./labs/lab-08.md) | 
 | Comandos | Lista de Comandos | [Acessar](./labs/comandos.md) |
 ---
 
