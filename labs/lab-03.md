@@ -299,5 +299,5 @@ Todos os comandos executados devem ser registrados e explicados.
    *Internetworking with TCP/IP – Volume I*. 5ª ed. Prentice Hall, 2005.
 
 ---
-
-> Este laboratório possui finalidade exclusivamente acadêmica, devendo as configurações e técnicas apresentadas serem utilizadas apenas em ambientes autorizados e controlados.
+> Laboratório desenvolvido para a disciplina **ENE0011 – Laboratório de Redes**  
+> **Prof. Dr. Laerte Peotta de Melo**
