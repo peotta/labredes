@@ -198,4 +198,8 @@ Relatório técnico contendo:
 ## Considerações Finais
 
 Este laboratório demonstra que **protocolos de roteamento também são alvos de ataque**, reforçando a importância de **segurança no plano de controle**, especialmente em redes corporativas, operadoras e infraestruturas críticas.
-  
+
+---
+
+> Laboratório desenvolvido para a disciplina **ENE0011 – Laboratório de Redes**  
+> **Prof. Dr. Laerte Peotta de Melo**
