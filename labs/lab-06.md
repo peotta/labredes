@@ -6,7 +6,7 @@ Departamento: **Engenharia Elétrica**
 Professor Responsável: **Prof. Dr. Laerte Peotta de Melo**
 
 ---
-# Laboratório 06 – OSPF (Open Shortest Path First)
+## Experimento 06 – OSPF (Open Shortest Path First)
 
 ## Descrição Geral
 
