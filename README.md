@@ -66,7 +66,7 @@ As atividades laboratoriais serão desenvolvidas de forma **prática e supervisi
 - Observação do comportamento da rede;
 - Registro técnico das atividades realizadas.
 
-O aluno deve seguir rigorosamente os **roteiros** [Acessar](./labs/roteiro.md) | e registrar os resultados conforme solicitado. 
+> O aluno deve seguir rigorosamente os **roteiros** utilizando o modelo de **relatório** [Acessar](./labs/relatório.md) e registrar os resultados conforme solicitado. 
 
 ---
 
@@ -78,7 +78,7 @@ A avaliação da disciplina será baseada em:
 - Participação e envolvimento durante as atividades;
 - Cumprimento dos prazos estabelecidos.
 
-Os critérios específicos de cada experimento serão informados no respectivo roteiro.
+> Os critérios específicos de cada experimento serão informados no respectivo roteiro.
 
 ---
 
