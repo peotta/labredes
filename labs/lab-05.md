@@ -17,7 +17,7 @@ A atividade dá continuidade ao laboratório de **Roteamento Estático**, substi
 
 > **Observações**
 
-Este laboratório integra a disciplina **Laboratório de Redes ** e deve ser realizado em sequência ao laboratório de  [**Roteamento Estático**](./labs/lab-03.md), pois se apoia na mesma topologia e conceitos iniciais.
+Este laboratório integra a disciplina **Laboratório de Redes** e deve ser realizado em sequência ao laboratório de  [**Roteamento Estático**](./labs/lab-03.md), pois se apoia na mesma topologia e conceitos iniciais.
 
 
 ---
