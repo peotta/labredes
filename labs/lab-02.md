@@ -106,14 +106,5 @@ O relatório deve conter, no mínimo:
 
 ---
 
-## Bibliografia
-
-1. KUROSE, J. F.; ROSS, K. W.  
-   *Computer Networks: A Top-Down Approach*. 5ª ed. Pearson Addison-Wesley, 2009.
-
-2. Sites diversos sobre **sniffers** e análise de protocolos na Internet.
-
----
-
 > Laboratório desenvolvido para a disciplina **ENE0011 – Laboratório de Redes**  
 > **Prof. Dr. Laerte Peotta de Melo**
