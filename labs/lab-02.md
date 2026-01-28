@@ -74,7 +74,7 @@ O experimento está dividido em quatro partes.
 
 ### Parte 3 – Detecção de Sniffers Maliciosos
 
-6. Utilize o log gerado pelo sniffer para tentar capturar **login e senha** de acesso ao ambiente `[teste](http://altoro.testfire.net/login.jsp)`.
+6. Utilize o log gerado pelo sniffer para tentar capturar **login e senha** de acesso ao ambiente [teste](http://altoro.testfire.net/login.jsp).
 
 7. Avalie se é possível realizar o mesmo procedimento para a captura de credenciais de acesso ao **email**.
 
