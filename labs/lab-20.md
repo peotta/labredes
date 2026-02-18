@@ -1,166 +1,148 @@
-# Atividade Extraclasse Prática
-## Análise Experimental de Memória Virtual e Paginação
+# Atividade Prática
+## Visualizando um Buffer Overflow na Stack
 
-Disciplina: Sistemas Operacionais  
-Tema: Fundamentos de Memória Virtual  
+Disciplina: ENE0091 - Sistemas Operacionais de Redes  
+Tema: Gerência de Memória e Segurança  
 Professor: Prof. Dr. Laerte Peotta de Melo  
 
 ---
 
 ## 1. Objetivo
 
-Investigar, na prática:
+Demonstrar experimentalmente:
 
-- Funcionamento da memória virtual  
-- Ocorrência de page faults  
-- Impacto do uso de memória na performance  
-- Evidências de thrashing  
-- Relação entre teoria (working set) e comportamento real  
+- Organização da stack
+- Como ocorre um buffer overflow
+- O que significa sobrescrever memória adjacente
+- Como o sistema reage (segmentation fault)
 
 ---
 
 ## 2. Ambiente Necessário
 
-- Sistema Linux (máquina física ou VM)  
-- Ferramentas:
-  - vmstat  
-  - top ou htop  
-  - free -m  
-  - perf (opcional)  
-  - Python ou C  
+- Linux (máquina física ou VM isolada)
+- GCC
+- gdb (debugger)
 
 ---
 
-## 3. Parte A - Observação do Estado Inicial
+## 3. Parte 1 - Programa Vulnerável
+
+Criar o arquivo `overflow.c`:
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+void func() {
+    char buffer[16];
+    printf("Digite algo: ");
+    gets(buffer);  // propositalmente inseguro
+    printf("Você digitou: %s
+", buffer);
+}
+
+int main() {
+    func();
+    return 0;
+}
+```
+
+---
+
+## 4. Parte 2 - Compilação Controlada
+
+Compilar desativando proteções automáticas (apenas para fins didáticos em ambiente isolado):
+
+```bash
+gcc -fno-stack-protector -z execstack -o overflow overflow.c
+```
+
+---
+
+## 5. Parte 3 - Execução Normal
 
 Executar:
 
-```
-free -m
-vmstat 1
-```
-
-Registrar:
-
-- Memória total e livre  
-- Uso de swap  
-- Taxa de page faults  
-- Uso de CPU  
-
----
-
-## 4. Parte B - Programa Gerador de Page Faults
-
-Criar um programa que:
-
-- Aloca grande vetor na memória  
-- Acessa posições espaçadas pelo tamanho da página (4 KB)
-
-### Exemplo em Python:
-
-```python
-import time
-
-size = 500_000_000
-array = bytearray(size)
-
-for i in range(0, size, 4096):
-    array[i] = 1
-    time.sleep(0.0001)
+```bash
+./overflow
 ```
 
-Executar e monitorar:
+Digite algo curto, por exemplo:
 
 ```
-vmstat 1
+abc
 ```
 
-Observar:
-
-- Aumento de page faults  
-- Crescimento de uso de memória  
-- Uso de swap (se houver)  
+O programa deve funcionar normalmente.
 
 ---
 
-## 5. Parte C - Pressão de Memória
+## 6. Parte 4 - Gerando Overflow
 
-Executar múltiplas instâncias do programa.
+Executar novamente e digitar uma sequência longa, por exemplo:
 
-Monitorar:
+```
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
 
-- Crescimento de swap  
-- Aumento da taxa de page faults  
-- Tempo de resposta do sistema  
+Resultado esperado:
 
-Analisar possível ocorrência de thrashing.
-
----
-
-## 6. Parte D - Experimento com Working Set
-
-Modificar o programa para:
-
-- Acessar repetidamente apenas uma parte do vetor  
-- Expandir progressivamente o conjunto de páginas acessadas  
-
-Comparar:
-
-- Taxa de page faults  
-- Tempo de execução  
-
-Relacionar resultados com o conceito de working set.
+- Travamento do programa
+- Ou mensagem de segmentation fault
 
 ---
 
-## 7. Parte E - Análise Teórica
+## 7. Parte 5 - Observação com gdb
 
-Responder:
+Abrir com:
 
-1. Se o tamanho da página for 4 KB, quantas páginas o programa aloca?  
-2. Qual o impacto esperado se a RAM disponível for menor que o conjunto ativo?  
-3. Como a TLB influencia o desempenho observado?  
+```bash
+gdb ./overflow
+run
+```
 
----
+Inserir uma string longa.
 
-## 8. Relatório
+Depois executar:
 
-Relatório técnico (5 a 7 páginas) contendo:
+```bash
+info registers
+```
 
-- Descrição do ambiente  
-- Código utilizado  
-- Tabelas com dados coletados  
-- Gráficos (page faults × tempo)  
-- Análise comparando teoria e experimento  
-
-Formato: PDF.
+Observar possível corrupção do registrador de retorno.
 
 ---
 
-## 9. Questões para Discussão
+## 8. Análise Conceitual
 
-1. Em que momento o sistema começou a degradar?  
-2. Houve evidência clara de thrashing?  
-3. O aumento da memória virtual melhora desempenho?  
-4. A TLB é perceptível diretamente nesse experimento?  
-5. Qual algoritmo de substituição o Linux utiliza?  
+Esta atividade demonstra:
 
----
-
-## 10. Critérios de Avaliação
-
-| Critério                    | Peso |
-|-----------------------------|------|
-| Execução correta            | 25%  |
-| Análise quantitativa        | 30%  |
-| Fundamentação teórica       | 25%  |
-| Clareza e organização       | 20%  |
+- Escrita além de 16 bytes
+- Sobrescrita da stack
+- Corrupção do controle de fluxo
+- Intervenção do sistema operacional
 
 ---
 
-## Competências Desenvolvidas
+## 9. Questões para Reflexão
 
-- Observação prática de memória virtual  
-- Análise de page faults  
-- Interpretação de thrashing  
-- Relação entre modelo teórico e comportamento real  
+1. Em que momento ocorre a falha?
+2. O sistema operacional impede o erro?
+3. O erro ocorre antes ou depois da tradução de endereços?
+4. Qual região da memória foi afetada?
+5. Isso viola o isolamento entre processos?
+
+---
+
+## 10. Conclusão Esperada
+
+- O overflow ocorre dentro do próprio processo.
+- A MMU não impede corrupção interna.
+- Segurança depende também de programação segura.
+
+---
+
+## Observação Ética
+
+Esta atividade é exclusivamente para fins educacionais, com foco em compreensão estrutural de vulnerabilidades e desenvolvimento seguro.
